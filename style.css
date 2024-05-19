@@ -1,0 +1,108 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+body {
+  background-color: #292B2C;
+  color: #E9E9E9;
+  font-family: Verdana;
+}
+
+.buttons {
+  list-style-type: none;
+  float: right;
+  margin-top: 10px;
+  margin-right: 5px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3F3F3F;
+}
+
+.neocities {
+  list-style-type: none;
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3F3F3F;
+}
+
+.special {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3F3F3F;
+}
+
+li.special {
+  float: left;
+}
+
+li.special a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.link:link {
+  color: #86A789;
+  background-color: transparent;
+}
+.link:visited {
+  color: #4F6F52;
+  background-color: transparent;
+}
+.link:hover {
+  color: #739072;
+  background-color: transparent;
+}
+.link:active {
+  color: #D2E3C8;
+  background-color: transparent;
+}
+
+.name {
+  font-weight: bold;
+  padding: 16px;
+  padding-right: 32px;
+  float: left;
+}
+
+.heading {
+  margin-top: 32px;
+}
+
+.flags {
+  color: gray;
+  margin-top: 6px;
+}
+
+.description {
+  margin-top: 24px;
+}
+
+td.notes li {
+  list-style: none; 
+  margin-top: 12px;
+}
+
+td.notes a {
+  color: #E9E9E9;
+  text-decoration: none;
+}
+
+.date {
+  padding-left: 16px;
+}
+
+.main {
+  padding-left: 24px;
+}
+
+.pspL {
+  padding-left: 4px;
+}

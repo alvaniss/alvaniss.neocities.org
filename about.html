@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>aalv's / about</title>
+  <link rel="icon" href="/favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=0.5">
+</head>
+  <body>
+  <div>
+      <ul class="special">
+        <li class="name"><a>aalv's</a></li>
+        <li class="special"><a href="/">home</a></li>
+        <li class="special"><a href="/about">about</a></li>
+        <li class="special"><a href="/notes">notes</a></li>
+        <li class="special"><a>✦</a></li>
+        <li class="special"><a href="/1999">1999</a></li>
+        <li class="neocities"><a target="_blank" href="https://neocities.org"><img src="neocities.gif" width="88" height="31"></a></li>
+        <li class="buttons"><a target="_blank" href="https://nonexistentfandomsfandom.neocities.org"><img src="https://nonexistentfandomsfandom.neocities.org/buttons/nonexistent.gif" width="88" height="31"></a></li>
+      </ul>
+    </div>
+    <div style="margin: 60px; height: 64px;"></div>
+    <div style="list-style-type: none; width: 274px; display: inline-block; overflow: hidden; vertical-align: top;">
+      <div id="app">
+      </div>
+      <script src="https://unpkg.com/webamp@1.4.2/built/webamp.bundle.min.js"></script>
+      <script>
+          const Webamp = window.Webamp;
+          const webamp = new Webamp({
+            initialTracks: [
+              {
+                metaData: {
+                  title: "This Charming Man",
+                  artist: "The Smiths",
+                },
+                url: "https://kappa.lol/3cL56",
+                duration: 244.0,
+              },
+              {
+                metaData: {
+                  title: "Happy Together",
+                  artist: "The Turtles",
+                },
+                url: "https://kappa.lol/q-ILt",
+                duration: 170.0,
+              },
+              {
+                metaData: {
+                  title: "Хочешь",
+                  artist: "Земфира",
+                },
+                url: "https://kappa.lol/FeWXg",
+                duration: 192.0,
+              },
+              {
+                metaData: {
+                  title: "Hot Rod Lincoln",
+                  artist: "Commander Cody and His Lost Planet Airmen",
+                },
+                url: "https://kappa.lol/vZPmE",
+                duration: 160.0,
+              },
+              {
+                metaData: {
+                  title: "Title",
+                  artist: "Artist",
+                },
+                url: "",
+                duration: 0.0,
+              },
+            ],
+          });
+          webamp.renderWhenReady(document.getElementById("app"));
+      </script>
+    </div>
+    <img style="position: absolute; right: 8px; top: 72px;" image src="../js-warning.gif">
+  </body>
+</html>
