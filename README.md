@@ -1,2 +1,3 @@
 # aalv.neocities.org
-A backup of my site
+
+This repository contains the various versions of my website.
