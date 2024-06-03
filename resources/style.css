@@ -41,11 +41,11 @@ a:visited {
 }
 
 .list-style-title {
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .list-style-description {
-  margin-bottom: 21px;
+  margin-bottom: 16px;
 }
 
 .list-style li a {
@@ -173,10 +173,6 @@ div {
   color: #d3c6aa;
 }
 
-.dark-mode .this-crap {
-  color: #d3c6aa;
-}
-
 .dark-mode .nickname {
     color: #9ba79e;
     background-color: #414b51;
@@ -215,6 +211,10 @@ div {
 }
 
 .dark-mode .hover-webpages a:hover {
+  background-color: #445158;
+}
+
+.dark-mode .hover-webpages li a:hover {
   background-color: #445158;
 }
 

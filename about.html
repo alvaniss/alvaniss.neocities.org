@@ -1,79 +1,114 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>aalv's / about</title>
-  <link rel="icon" href="/favicon.png" type="image/png">
-  <link rel="stylesheet" href="style.css">
+  <title>alvaniss' dwelling ~ about</title>
+  <link rel="icon" href="img/favicon.webp" type="img">
+  <link rel="stylesheet" href="./style.css">
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <meta name="viewport" content="width=device-width, initial-scale=0.6">
 </head>
-  <body>
-  <div>
-      <ul class="special">
-        <li class="name"><a>aalv's</a></li>
-        <li class="special"><a href="/">home</a></li>
-        <li class="special"><a href="/about">about</a></li>
-        <li class="special"><a href="/notes">notes</a></li>
-        <li class="special"><a>✦</a></li>
-        <li class="special"><a href="/1999">1999</a></li>
-        <li class="neocities"><a target="_blank" href="https://neocities.org"><img src="neocities.gif" width="88" height="31"></a></li>
-        <li class="buttons"><a target="_blank" href="https://nonexistentfandomsfandom.neocities.org"><img src="https://nonexistentfandomsfandom.neocities.org/buttons/nonexistent.gif" width="88" height="31"></a></li>
-      </ul>
+<body class="body-style">
+  <div class="the-divs">
+    <div class="nickname box">
+      <a class="hover-nickname" style="color: #839282;" href="./index.html">alvaniss</a>
     </div>
-    <div style="margin: 60px; height: 64px;"></div>
-    <div style="list-style-type: none; width: 274px; display: inline-block; overflow: hidden; vertical-align: top;">
-      <div id="app">
+  </div>
+  <div class="the-pages hover-webpages">
+    <a href="./updates.html">updates</a>
+    <a href="./about.html">about</a>
+    <a href="./links.html">links</a>
+    <a href="./resources/index.html">resources</a>
+  </div>
+  <div style="display: flex; margin: auto; gap: 8px; height: auto;">
+    <div style="display: block; width: 455px; margin-left: auto;">
+      <div class="window-name box" style="width: 445px;">
+        <a>about</a>
+        <a class="cross">x</a>
       </div>
-      <script src="https://unpkg.com/webamp@1.4.2/built/webamp.bundle.min.js"></script>
-      <script>
-          const Webamp = window.Webamp;
-          const webamp = new Webamp({
-            initialTracks: [
-              {
-                metaData: {
-                  title: "This Charming Man",
-                  artist: "The Smiths",
-                },
-                url: "https://kappa.lol/3cL56",
-                duration: 244.0,
-              },
-              {
-                metaData: {
-                  title: "Happy Together",
-                  artist: "The Turtles",
-                },
-                url: "https://kappa.lol/q-ILt",
-                duration: 170.0,
-              },
-              {
-                metaData: {
-                  title: "Хочешь",
-                  artist: "Земфира",
-                },
-                url: "https://kappa.lol/FeWXg",
-                duration: 192.0,
-              },
-              {
-                metaData: {
-                  title: "Hot Rod Lincoln",
-                  artist: "Commander Cody and His Lost Planet Airmen",
-                },
-                url: "https://kappa.lol/vZPmE",
-                duration: 160.0,
-              },
-              {
-                metaData: {
-                  title: "Title",
-                  artist: "Artist",
-                },
-                url: "",
-                duration: 0.0,
-              },
-            ],
-          });
-          webamp.renderWhenReady(document.getElementById("app"));
-      </script>
+      <div class="center box window-text" style="overflow-y: hidden; width: 445px; height: 320px;">
+        hi again. for the most part, this is a personal project and sort of a way to relax. but you may wander around here, who the hell am i to stop uu<br><br>
+        <a class="this-crap" style="font-weight: bold;">me:</a> 18m INFJ somewhere from asia<br><br>
+        <a class="this-crap" style="font-weight: bold;">interests:</a> web development, design, languages, traveling, movies, games<br><br>
+        <a class="this-crap" style="font-weight: bold;">favorites:</a> carol, mid90s, pulp fiction, road 96, dishonored series, cyberpunk 2077<br><br>
+      </div>
     </div>
-    <img style="position: absolute; right: 8px; top: 72px;" image src="../js-warning.gif">
-  </body>
+    <div style="display: block; width: 149px; margin-right: auto; position: relative;">
+      <div class="window-name box" style="width: 139px;">
+        <a style="margin: 0;">no socials</a>
+        <a class="cross">x</a>
+      </div>
+      <div class="center box window-text" style="width: 139px; height: auto;">
+          <a id="counter-sm" class="switch" style="cursor: text;"></a>
+      </div>
+      <div class="window-name box" style="width: 139px;">
+        <a style="margin: 0;">spanish</a>
+        <a class="cross">x</a>
+      </div>
+      <div class="center box window-text" style="width: 139px; height: auto;">
+          <a id="counter-es" class="switch" style="cursor: text;"></a>
+      </div>
+      <div class="window-name box" style="width: 139px;">
+        <a style="margin: 0;">till bd</a>
+        <a class="cross">x</a>
+      </div>
+      <div class="center box window-text" style="width: 139px; height: auto;">
+          <a id="counter-bd" class="switch" style="cursor: text;"></a>
+      </div>
+      <div class="window-name box" style="width: 139px; position: absolute; bottom: 34px; left: 0;">
+        <a style="margin: 0;">dark mode</a>
+        <a class="cross">x</a>
+      </div>
+      <div class="center box window-text" style="width: 139px; height: auto; position: absolute; bottom: 4px; left: 0;">
+        <button class="switch hover-body" style="padding-left: 0;" onclick="myFunction()">toggle</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    function myFunction() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+
+      if (element.classList.contains("dark-mode")) {
+        localStorage.setItem("theme", "dark");
+      }
+      else {
+        localStorage.setItem("theme", "light");
+      }
+    }
+
+      window.onload = function() {
+        const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const userPreference = localStorage.getItem("theme");
+        if (userPreference === "dark" || (userPreference === null && userPrefersDark)) {
+          document.body.classList.add("dark-mode");
+        }
+    }
+    
+      // counter
+
+      var counter_sm = new Date("May 15, 2024 20:00:00").getTime();
+      var counter_es = new Date("Mar 19, 2023 20:00:00").getTime();
+      var counter_bd = new Date("Jul 28, 2024").getTime();
+
+      function updateCounter() {
+
+      var now = new Date().getTime();
+      
+      var distance_sm = counter_sm - now;
+      var distance_es = counter_es - now;
+      var distance_bd = counter_bd - now;
+
+      var days_sm = Math.floor(-1*(distance_sm / (1000 * 60 * 60 * 24)));
+      var days_es = Math.floor(-1*(distance_es / (1000 * 60 * 60 * 24)));
+      var days_bd = Math.floor((distance_bd / (1000 * 60 * 60 * 24)));
+
+      document.getElementById("counter-sm").innerHTML = days_sm + " days";
+      document.getElementById("counter-es").innerHTML = days_es + " days";
+      document.getElementById("counter-bd").innerHTML = days_bd + " days";
+      }
+
+      updateCounter();
+      var x = setInterval(updateCounter, 300000);
+  </script>
+</body>
 </html>

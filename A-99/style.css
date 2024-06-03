@@ -1,0 +1,64 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+body {
+  background-color: #FFFFFF;
+  color: #313337;
+  font-family: sysfont;
+}
+
+@font-face {
+  font-family: sysfont;
+  src: url(./fonts/sysfont.woff) format('woff');
+}
+
+.link:link {
+  color: #86A789;
+  background-color: transparent;
+}
+.link:visited {
+  color: #4F6F52;
+  background-color: transparent;
+}
+.link:hover {
+  color: #739072;
+  background-color: transparent;
+}
+.link:active {
+  color: #D2E3C8;
+  background-color: transparent;
+}
+
+.image_main {
+  display: block;
+  margin: auto;
+}
+
+.work_in_progress {
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  background-color: black;
+  margin: auto;
+  width: 600px;
+}
+
+.headlines {
+  position: absolute;
+  top: 1.5px;
+  left: 210px;
+  font-family: sysfont;
+  color: black;
+}
+
+.small_text {
+  font-family: verdana;
+  font-size: 10px;
+  display: block;
+  margin: auto;
+  width: 600px;
+  color: #999999;
+}
