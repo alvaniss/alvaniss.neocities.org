@@ -150,6 +150,10 @@ div {
   background-color: #f2ead3;
 }
 
+.red {
+  color: #f85552;
+}
+
 /* Tooltip */
 
 .tooltip-wrap .tooltip-content {
@@ -220,6 +224,10 @@ div {
 
 .dark-mode .hover-body:hover {
   background-color: #394449;
+}
+
+.dark-mode .red {
+  color: #e67e7f;
 }
 
 /* Bottom */
