@@ -1,10 +1,10 @@
 # alvanss.neocities.org (formerly aalv.neocities.org)
 
-This repository contains the various versions of my website.
+This repository contains the source code of my website. Different versions of it are represented by new releases, which you can find here as well.
 
 # Archive
 
-This section contains screenshots of my website in different versions so it's easy to see what has changed.
+This section contains screenshots of different versions of my website so it's easy to see what has changed.
 
 | Version | Screenshot |
 |---|---|
