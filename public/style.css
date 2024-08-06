@@ -15,6 +15,8 @@ body {
 /* Fonts */
 
 @font-face { font-family: Unifont; src: url('https://i.supa.codes/0nLmu'); }
+@font-face { font-family: sysfont; src: url(./A-99/fonts/sysfont.woff) format('woff');
+}
 
 /* Links */
 
@@ -237,4 +239,12 @@ div {
   font-size: 19px;
   cursor: pointer;
   border: none;
+}
+
+img {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
 }
