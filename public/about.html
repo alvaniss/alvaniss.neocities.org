@@ -26,20 +26,13 @@
         <a class="cross">x</a>
       </div>
       <div class="center box window-text" style="overflow-y: hidden; width: 445px; height: 320px;">
-        hi again. for the most part, this is a personal project and sort of a way to relax. but you may wander around here, who the hell am i to stop youu.<br><br>
+        hi again. for the most part, this is a personal project and sort of a way to relax. but you may wander around here.<br><br>
         <a class="this-crap" style="font-weight: bold;">me:</a> 18m, INFJ, somewhere from asia<br><br>
         <a class="this-crap" style="font-weight: bold;">interests:</a> web development, design, languages, traveling, movies, games<br><br>
-        <a class="this-crap" style="font-weight: bold;">favorites:</a> carol, mid90s, pulp fiction, road 96, dishonored series, cyberpunk 2077<br><br>
+        <a class="this-crap" style="font-weight: bold;">i love:</a> carol, mid90s, pulp fiction, road 96, dishonored series, cyberpunk 2077<br><br>
       </div>
     </div>
     <div style="display: block; width: 149px; margin-right: auto; position: relative;">
-      <div class="window-name box" style="width: 139px;">
-        <a style="margin: 0;">spanish</a>
-        <a class="cross">x</a>
-      </div>
-      <div class="center box window-text" style="width: 139px; height: auto;">
-          <a id="counter-es" class="switch" style="cursor: text;"></a>
-      </div>
       <div class="window-name box" style="width: 139px;">
         <a style="margin: 0;">until bd</a>
         <a class="cross">x</a>
@@ -79,20 +72,16 @@
     
       // counter
 
-      var counter_es = new Date("Mar 20, 2023 20:00:00").getTime();
-      var counter_bd = new Date("Jul 28, 2024 24:00:00").getTime();
+      var counter_bd = new Date("Jul 28, 2025 12:00:00").getTime();
 
       function updateCounter() {
 
       var now = new Date().getTime();
       
-      var distance_es = counter_es - now;
       var distance_bd = counter_bd - now;
 
-      var days_es = Math.floor(-1*(distance_es / (1000 * 60 * 60 * 24)));
       var days_bd = Math.floor((distance_bd / (1000 * 60 * 60 * 24)));
 
-      document.getElementById("counter-es").innerHTML = days_es + " days";
       document.getElementById("counter-bd").innerHTML = days_bd + " days";
       }
 

@@ -14,19 +14,20 @@ body {
 }
 
 .link:link {
-  color: #86A789;
+  color: #000000;
   background-color: transparent;
+  text-decoration: none;
 }
 .link:visited {
-  color: #4F6F52;
+  color: #000000;
   background-color: transparent;
 }
 .link:hover {
-  color: #739072;
+  color: #000000;
   background-color: transparent;
 }
 .link:active {
-  color: #D2E3C8;
+  color: #000000;
   background-color: transparent;
 }
 
@@ -48,7 +49,7 @@ body {
 
 .headlines {
   position: absolute;
-  top: 1.5px;
+  top: 4.5px;
   left: 210px;
   font-family: sysfont;
   color: black;
@@ -61,4 +62,12 @@ body {
   margin: auto;
   width: 600px;
   color: #999999;
+}
+
+img {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
 }
