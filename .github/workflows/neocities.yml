@@ -25,4 +25,3 @@ jobs:
         api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
         cleanup: true
         dist_dir: public
-        DEBUG: 'neocities:*'
