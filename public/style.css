@@ -54,6 +54,10 @@ a:visited {
   background-color: #dfd7c1;
 }
 
+.clickable-not-link:hover {
+  background-color: #dfd7c1;
+}
+
 .hover-body:hover {
   background-color: #dfd7c1;
 }
