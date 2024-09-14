@@ -15,7 +15,7 @@ body {
 /* Fonts */
 
 @font-face { font-family: Unifont; src: url('https://i.supa.codes/0nLmu'); }
-@font-face { font-family: sysfont; src: url(./A-99/fonts/sysfont.woff) format('woff');
+@font-face { font-family: sysfont; src: url(./Y-1999/fonts/sysfont.woff) format('woff');
 }
 
 /* Links */
@@ -38,6 +38,22 @@ a:visited {
   background-color: #eee6d5;
 }
 
+.clickable:link {
+  text-decoration: underline;
+}
+
+.clickable:link:hover {
+  background-color: #dfd7c1;
+}
+
+.clickable a:link {
+  text-decoration: underline;
+}
+
+.clickable a:link:hover {
+  background-color: #dfd7c1;
+}
+
 .hover-body:hover {
   background-color: #dfd7c1;
 }
@@ -56,6 +72,10 @@ a:visited {
 
 .list-style li a:hover {
   background-color: #dfd7c1;
+}
+
+div .pixelated a img {
+  image-rendering: pixelated;
 }
 
 /* Top */
@@ -96,6 +116,7 @@ a:visited {
 .the-pages a {
   margin-left: 5px;
   margin-right: 5px;
+  text-decoration: underline;
 }
 
 .box {
@@ -179,6 +200,27 @@ div {
   color: #d3c6aa;
 }
 
+/** ↑↑↑
+🦧 Evolution can you give me Pattern seeking behaviour
+To avoid predators? 🧬
+Yeeees. 🦧
+
+Actually develops
+Paranoid Schizophrenia
+🧠
+like a boss 👩
+like a boss 👶
+like a boss 😎
+like a boss 👨
+like a boss 👴
+like a boss 🧔‍♂️
+like a boss 👩‍🦳
+
+I wish you were dead 😱
+
+schizo time 😱😱
+**/
+
 .dark-mode .nickname {
     color: #9ba79e;
     background-color: #414b51;
@@ -224,6 +266,14 @@ div {
   background-color: #394449;
 }
 
+.dark-mode .clickable a:hover {
+  background-color: #394449;
+}
+
+.dark-mode .clickable:link:hover {
+  background-color: #394449;
+}
+
 /* Bottom */
 
 .below {
@@ -246,5 +296,6 @@ img {
   image-rendering: -moz-crisp-edges;
   image-rendering: -o-crisp-edges;
   image-rendering: -webkit-optimize-contrast;
+  image-rendering: pixelated;
   -ms-interpolation-mode: nearest-neighbor;
 }
