@@ -1,4 +1,4 @@
-# alvanss.neocities.org (formerly aalv.neocities.org)
+# alvanss.neocities.org
 
 This repository contains the source code of my website. Different versions of it are represented by new releases, which you can find here as well.
 
