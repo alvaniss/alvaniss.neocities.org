@@ -1,0 +1,90 @@
+.changelog-entry {
+    list-style: none;
+    margin-top: 0;
+    padding-left: 24px;
+}
+
+.last {
+    margin-bottom: 0;
+}
+
+.changelog-entry li::before {
+    content: "-";
+    margin-right: 8px;
+    color: #e9e9e9;
+}
+
+.changelog-entry a {
+    
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: -20px;
+}
+
+.changelog-entry li:nth-child(2) {
+    margin-top: 6px;
+}
+
+.changelog-bar {
+    width: 822px;
+    text-align: center;
+    margin-top: -3px;
+}
+
+.changelog-bar a {
+    font-size: 12px;
+}
+
+.changelog-bar a:nth-child(1n+2):not(.changelog-bar-link) {
+    margin-left: 50px;
+}
+
+.changelog-bar a img {
+    vertical-align: middle;
+    padding-right: 1px;
+    width: 11px;
+    height: 11px;
+}
+
+.changelog-bar-link:any-link {
+    color: #e9e9e9;
+}
+
+.changelog-bar-link:any-link:hover {
+    background-color: var(--background);
+}
+
+.changelog-line {
+    display: flex;
+    padding-bottom: 16px;
+}
+
+.changelog-line div {
+    position: absolute;
+    margin-left: -12px;
+    border-style: solid none none none;
+    border-width: 2px;
+    width: 846px;
+}
+
+.changelog-line a {
+    position: absolute;
+    color: white;
+    margin-left: 724px
+}
+
+.color-1 div {
+    border-color: #5c5959;
+}
+
+.color-1 a {
+    background-color: #5c5959;
+}
+
+.color-2 div {
+    border-color: #738b46;
+}
+
+.color-2 a {
+    background-color: #738b46;
+}

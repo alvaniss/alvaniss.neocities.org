@@ -1,0 +1,42 @@
+.launchpad {
+    height: 166px;
+    padding-bottom: 10px;
+}
+
+.launchpad img {
+    position: absolute;
+    margin-left: -105px;
+    width: 587.5px;
+}
+
+.launchpad iframe {
+    position: absolute;
+    margin-left: 482px;
+    width: 410px;
+    height: 178px;
+    border: 0;
+}
+
+.iframe-launchpad div {
+    width: 410px;
+    height: 178px;
+    background-color: #DAD7CD;
+}
+
+.iframe-launchpad div ul {
+    list-style: none;
+    padding-left: 12px;
+    margin: 0;
+}
+
+.iframe-launchpad div ul li:nth-child(1) {
+    padding-top: 12px;
+}
+
+.iframe-launchpad div ul li a:any-link {
+    color: black;
+}
+
+.iframe-launchpad div ul li a:any-link:hover {
+    background-color: #c4c0b5;
+}

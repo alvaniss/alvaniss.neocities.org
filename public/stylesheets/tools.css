@@ -1,0 +1,185 @@
+/* MAIN PAGE */
+
+.background-text-tools {
+    width: 822px;
+    margin-top: -22px;
+    text-align: right;
+    font-weight: 800;
+    font-size: 95px;
+    position: absolute;
+    mix-blend-mode: screen;
+    pointer-events: none;
+}
+
+.tools-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tools-list li:nth-child(1n+2) {
+    margin-top: 16px;
+}
+
+.tools-list li a:any-link {
+    color: #798bee;
+    font-family: Geist;
+}
+
+.tools-list li a:any-link:hover {
+    background-color: var(--background);
+}
+
+.databases {
+    position: absolute;
+    font-family: Geist;
+    font-weight: 650;
+    font-size: 43px;
+    color: white;
+    margin-left: -43.8px;
+}
+
+.configs {
+    margin-left: -562px;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    text-align: center;
+}
+
+.configs li {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.configs li a:any-link {
+    color: black;
+}
+
+.configs li a:any-link:hover {
+    background-color: #e0e0e0;
+}
+
+@keyframes blink {
+    50% {
+      opacity: 0.0;
+    }
+  }
+  .blink:any-link:hover {
+    animation: blink 1.2s step-start 0s infinite;
+  }
+
+  .wrapper {
+    width: 562px;
+    overflow: hidden;
+    margin-left: -562px;
+    margin-top: -29px;
+    font-size: 38px;
+  }
+  
+  .marquee {
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: marquee 55s linear infinite;
+  }
+  
+  .marquee p {
+    display: inline-block;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+
+
+  .page-archive {
+    position: absolute;
+    margin-top: 8px;
+    margin-left: -65px;
+    rotate: -15deg;
+
+  }
+
+  .page-archive span {
+    position: absolute;
+    text-wrap: nowrap;
+    background-color: black;
+    color: white;
+    rotate: 18deg;
+    margin-top: -20px;
+    margin-left: -10px;
+    font-size: 12px;
+  }
+
+  .page-archive img {
+    height: 32px;
+  }
+
+  .page-archive img:hover {
+    rotate: 25deg;
+  }
+
+/* TOOLS */
+
+.link:any-link {
+  color: #2982db;
+}
+
+.link:hover {
+  background-color: var(--background);
+}
+
+.features-list {
+  list-style: square;
+  list-style-position: inside;
+  padding-bottom: 0;
+  margin-top: 4px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: -40px;
+}
+
+.features-list li a {
+  font-weight: bold;
+}
+
+.instructions-list {
+  list-style-type: decimal;
+  list-style-position: inside;
+  padding-bottom: 0;
+  margin-top: 4px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: -40px;
+}
+
+.instructions-list li a {
+  font-family: Geist;
+  background-color: var(--background);
+}
+
+.copy-button {
+  padding: 4px 6px;
+  background-color: #e56968;
+  border-radius: 3px;
+  color: #fef6e3;
+  font-family: Geist;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.copy-button:hover {
+  background-color: #b25150;
+}
+
+.copy-button:active {
+  background-color: #7e3939;
+}

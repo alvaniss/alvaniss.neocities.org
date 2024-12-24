@@ -1,0 +1,339 @@
+/** fonts **/
+
+@font-face {font-family: GeistMono; src: url('./fonts/GeistMono.woff2') format('woff2');}
+@font-face {font-family: Geist; src: url('./fonts/Geist.woff2') format('woff2');}
+
+/** essential **/
+
+body {
+    margin: 0;
+    font-family: GeistMono;
+    font-size: 16px;
+    color: #e9e9e9;
+    background-color: #000000;
+}
+
+:root {
+    --background: #252525;
+    --border: #2e2e2e;
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+.no-link-decoration {
+    text-decoration: none;
+}
+
+/** fucking apple and their webkit with special font rendering, sons of bitches **/
+
+a {
+    font-synthesis: none !important;
+}
+
+/** global **/
+
+.page-heading {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.outline-top {
+    background-color: #0a0a0a;
+    border-style: solid solid none solid;
+    border-color: var(--border);
+    border-width: 1px;
+    padding: 12px;
+    margin: auto;
+    width: 822px;
+}
+
+.outline {
+    background-color: #050505;
+    border-style: none solid none solid;
+    border-color: var(--border);
+    border-width: 1px;
+    padding: 12px;
+    margin: auto;
+    width: 822px;
+}
+
+.outline-bottom {
+    background-color: #050505;
+    border-style: none solid solid solid;
+    border-color: var(--border);
+    border-width: 1px;
+    padding: 12px;
+    margin: auto;
+    width: 822px;
+}
+
+.outline-all {
+    background-color: #0a0a0a;
+    border-style: solid solid solid solid;
+    border-color: var(--border);
+    border-width: 1px;
+    margin: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 822px;
+}
+
+.outline-fade {
+    display: flex;
+}
+
+.outline-fade div:nth-child(1) {
+    border-style: dashed none none none;
+    border-color: #6d6d6d;
+    border-width: 1px;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    margin-left: auto;
+    width: 150px;
+}
+
+.outline-fade div:nth-child(2) {
+    border-style: dashed none none none;
+    border-color: #6d6d6d;
+    border-width: 1px;
+    width: 822px;
+}
+
+.outline-fade div:nth-child(3) {
+    border-style: dashed none none none;
+    border-color: #6d6d6d;
+    border-width: 1px;
+    mask-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    margin-right: auto;
+    width: 150px;
+}
+
+.cool-link:any-link {
+    color: #2982db;
+}
+
+.cool-link:any-link:hover {
+    background-color: var(--background);
+}
+
+/** navigation bar **/
+
+.navigation {
+    width: 560px;
+}
+
+.navigation ul {
+    overflow-y: hidden;
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    gap: 24px;
+    font-size: 14px;
+}
+
+.navigation ul li {
+    margin-top: 10px;
+}
+
+.navigation ul li a:any-link {
+    text-decoration: none;
+    color: #e9e9e9;
+    padding: 10px;
+}
+
+.bar ul li {
+    position: relative;
+    }
+    
+    .bar ul li a::before {
+    font-family: GeistMono;
+    margin-top: 3px;
+    content: '_';
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    }
+    
+    .bar ul li a:hover::before {
+    opacity: 1;
+    }
+
+.iframe-navigation-bar {
+    height: 38px;
+    display: flex;
+    width: 560px;
+    border: none;
+    margin: auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/** last div **/
+
+.last-div {
+    background-color: #0a0a0a;
+    margin-bottom: 150px;
+    border-style: none solid solid solid;
+    border-color: var(--border);
+    border-width: 1px;
+    padding: 12px;
+    margin: auto;
+    margin-bottom: 120px;
+    width: 822px;
+}
+
+.last-div iframe {
+    border: 0;
+    width: 100%;
+    height: 19px;
+}
+
+/** festive lights **/
+
+.christmas-lights li {
+    --christmas-lights-1: #ffc14c;
+    --christmas-lights-2: #3ad364;
+    --christmas-lights-3: #52adde;
+    --christmas-lights-4: #ed5d56;
+    --christmas-lights-5: #9454b1;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-name: flash-1;
+    border-radius: 50%;
+    display: inline-block;
+    height: 20px;
+    margin: 25px 20px;
+    position: relative;
+    width: 20px;
+}
+  
+.christmas-lights {
+    margin-top: -138px;
+    margin-left: -40px;
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 100;
+    text-align: center;
+}
+  
+.christmas-lights li:before {
+    content: "";
+    position: absolute;
+    background: #505050;
+    width: 10px;
+    height: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    top: -9px;
+    left: 5px;
+}
+  
+.christmas-lights li:after {
+    content: "";
+    top: -23px;
+    left: 10px;
+    position: absolute;
+    width: 60px;
+    height: 20px;
+    border-bottom: solid #505050 2px;
+    border-radius: 50%;
+}
+  
+.christmas-lights li:last-child:after {
+    content: none;
+}
+  
+.christmas-lights li:nth-child(2n+1) {
+    background: var(--christmas-lights-1);
+    box-shadow: 0px 5px 24px 3px rgb(249 212 129);
+    animation-name: flash-2;
+    animation-duration: 0.8s;
+}
+  
+.christmas-lights li:nth-child(4n+2) {
+    background: var(--christmas-lights-2);
+    box-shadow: 0px 5px 24px 3px var(--christmas-lights-2);
+    animation-name: flash-3;
+    animation-duration: 2.2s;
+}
+
+.christmas-lights li:nth-child(4n+3) {
+    background: var(--christmas-lights-3);
+    box-shadow: 0px 5px 24px 3px var(--christmas-lights-3);
+    animation-name: flash-4;
+    animation-duration: 1.7s;
+}
+
+.christmas-lights li:nth-child(4n+4) {
+    background: var(--christmas-lights-3);
+    box-shadow: 0px 5px 24px 3px var(--christmas-lights-3);
+    animation-name: flash-5;
+    animation-duration: 1.7s;
+}
+  
+.christmas-lights li:nth-child(odd) {
+    animation-duration: 3.6s;
+}
+  
+.christmas-lights li:nth-child(3n+1) {
+    animation-duration: 2.8s;
+}
+  
+@keyframes flash-1 {
+    0%, 100% {
+        background: var(--christmas-lights-1);
+        box-shadow: 0px 5px 24px 3px var(--christmas-lights-1);
+    }
+    50% {
+        background: var(--christmas-lights-2);
+        box-shadow: 0px 5px 24px 3px var(--christmas-lights-2);
+    }
+}
+  
+@keyframes flash-2 {
+    0%, 100% {
+        background: var(--christmas-lights-2);
+        box-shadow: 0px 5px 24px 3px var(--christmas-lights-2);
+    }
+    50% {
+        background: var(--christmas-lights-3);
+        box-shadow: 0px 5px 24px 3px var(--christmas-lights-3);
+    }
+}
+  
+@keyframes flash-3 {
+    0%, 100% {
+        background: var(--christmas-lights-3);
+        box-shadow: 0px 5px 24px 3px var(--christmas-lights-3);
+    }
+    50% {
+        background: var(--christmas-lights-4);
+        box-shadow: 0px 5px 24px 3px var(--christmas-lights-4);
+    }
+}
+
+@keyframes flash-4 {
+    0%, 100% {
+        background: var(--christmas-lights-4);
+        box-shadow: 0px 5px 24px 3px var(--christmas-lights-4);
+    }
+    50% {
+        background: var(--christmas-lights-5);
+        box-shadow: 0px 5px 24px 3px var(--christmas-lights-5);
+    }
+}
+
+@keyframes flash-5 {
+    0%, 100% {
+        background: var(--christmas-lights-5);
+        box-shadow: 0px 5px 24px 3px var(--christmas-lights-5);
+    }
+    50% {
+        background: var(--christmas-lights-1);
+        box-shadow: 0px 5px 24px 3px var(--christmas-lights-1);
+    }
+}

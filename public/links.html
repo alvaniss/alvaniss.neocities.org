@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>links</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./stylesheets/links.css">
+    <meta charset="utf-8"/>
+</head>
+<body>
+    <iframe src="./iframes/navigation-bar.html" class="iframe-navigation-bar"></iframe>
+    <div class="outline-top">
+        <a class="page-heading">links</a>
+    </div>
+    <div class="outline-fade">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="outline-blocks">
+        <div class="block-1">
+            <div data-src="./images/links/neocities-alvaniss-light.gif" class="active-border">light</div>
+            <div class="block-border"></div>
+            <div data-src="./images/links/neocities-alvaniss-dark.gif" class="not-active-border">dark</div>
+            <a><img id="mainImage" src="./images/links/neocities-alvaniss-light.gif"></a>
+        </div>
+        <div class="block-2">
+            <div class="block-title">
+                <a>neofriends</a>
+            </div>
+            <div>
+                <a href="https://nonexistentfandomsfandom.neocities.org/"><img src="./images/links/neocities-nonexistent.gif"></a>
+                <a href="https://kwaamfan.neocities.org/"><img src="./images/links/neocities-kwaamfan.gif"></a>
+                <a href="https://frajola.neocities.org/"><img src="./images/links/neocities-frajola.gif"></a>
+                <a href="https://blumchen.cafe/"><img src="./images/links/neocities-blumchen.gif"></a>
+                <div class="block-name"><div><a href="https://fresiia.neocities.org/">fresiia</a></div></div>
+                <div class="block-name"><div><a href="https://phi1l1y.neocities.org/">phi1l1y</a></div></div>
+            </div>
+        </div>
+    </div>
+    <div class="outline-bottom">
+        <div class="block-3">
+            <a href="https://l00tl00t.neocities.org/"><img src="./images/links/neocities-l00tl00t.gif"></a>
+            <a href="https://caby.neocities.org/"><img src="./images/links/neocities-caby.gif"></a>
+            <a href="https://dionyseia.neocities.org/"><img src="./images/links/neocities-dinoyseia.png"></a>
+            <a href="https://monsieurdoll.neocities.org/"><img src="./images/links/neocities-monsieurdoll.png"></a>
+            <a href="https://omnipresence.neocities.org/"><img src="./images/links/neocities-omnipresence.gif"></a>
+            <a href="https://irony-machine.neocities.org/"><img src="./images/links/neocities-irony-machine.png"></a>
+            <a href="https://ries.neocities.org/"><img src="./images/links/neocities-ries.gif"></a>
+            <a href="https://amivicky.neocities.org/"><img src="./images/links/neocities-amivicky.gif"></a>
+            <div class="block-name"><div><a href="https://ita.toys/">ita</a></div></div>
+            <div class="block-name"><div><a href="https://quga.m0e.space/">quga</a></div></div>
+            <div class="block-name"><div><a href="https://yaosamo.com/">yaosamo</a></div></div>
+            <div class="block-name"><div><a href="https://www.syndromatic.com/">sndrmtc</a></div></div>
+            <div class="block-name"><div><a href="https://trashb.at/">trashb</a></div></div>
+            <div class="block-name"><div><a href="https://jalipeno.xyz/">jalipeno</a></div></div>
+            <div class="block-name"><div><a href="https://trendgender.neocities.org/">trndgndr</a></div></div>
+            <div class="block-name"><div><a href="https://sussuri.neocities.org/">sussuri</a></div></div>
+        </div>
+    </div>
+    <div class="outline-bottom">
+        <div class="block-3">
+            <a href="https://www.7-zip.org/"><img src="./images/links/button-7zip.gif"></a>
+            <a href="https://www.startpage.com/"><img src="./images/links/button-startpage.gif"></a>
+            <a href="https://www.neocities.org/"><img src="./images/links/button-neocities.gif"></a>
+            <a><img src="./images/links/button-16bit.gif"></a>
+            <a><img src="./images/links/button-internetexplerror.gif"></a>
+            <a><img src="./images/links/button-bestviewed.gif"></a>
+        </div>
+    </div>
+    <div class="last-div">
+        <iframe src="./iframes/last-div.html"></iframe>
+        <script src="./lights.js" defer></script>
+        <script src="./snow.js" defer></script>
+    </div>
+    <script>
+    const divs = document.querySelectorAll('.block-1 div');
+    const img = document.getElementById('mainImage');
+
+    divs.forEach(div => {
+        div.addEventListener('click', () => {
+            divs.forEach(d => d.classList.remove('active-border'));
+            divs.forEach(d => d.classList.add('not-active-border'));
+            div.classList.remove('not-active-border');
+            div.classList.add('active-border');
+            img.src = div.getAttribute('data-src');
+        });
+    });
+    </script>
+</body>
+</html>

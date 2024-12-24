@@ -1,0 +1,85 @@
+.outline-blocks {
+    display: flex;
+    height: 128px;
+    border-style: solid solid solid solid;
+    border-color: var(--border);
+    border-width: 1px;
+    margin: auto;
+    width: 846px;
+}
+
+.outline-blocks div:nth-child(1), .outline-blocks div:nth-child(2) {
+    border-style: none solid none none;
+}
+
+.outline-blocks div {
+    background-color: #050505;
+    border-color: #2e2e2e;
+    border-width: 1px;
+    width: 282px;
+    font-family: Geist;
+    text-align: center;
+    padding-top: 34px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.outline-blocks div p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+.uptime-dot {
+    color: #4CAF50;
+    position: absolute;
+    margin-top: -3.6px;
+    margin-left: -5px;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.wrapped-gift {
+    image-rendering: pixelated;
+    opacity: 0.5;
+    position: absolute;
+    rotate: 15deg;
+    margin-top: 48px;
+    margin-left: -50px;
+}
+
+.christmas-tree {
+    image-rendering: pixelated;
+    opacity: 0.5;
+    position: absolute;
+    rotate: -3deg;
+    margin-top: -23px;
+    margin-left: 172px;
+}
+
+.palm-tree {
+    image-rendering: pixelated;
+    opacity: 0.5;
+    position: absolute;
+    rotate: 11deg;
+    margin-top: -16px;
+    margin-left: -72px;
+}
+
+.pistol {
+    image-rendering: pixelated;
+    opacity: 0.7;
+    position: absolute;
+    rotate: -8deg;
+    margin-top: 44px;
+    margin-left: 135px;
+}
+
+.herb {
+    image-rendering: pixelated;
+    opacity: 0.7;
+    position: absolute;
+    rotate: 0deg;
+    margin-top: 37px;
+    margin-left: 134px;
+}

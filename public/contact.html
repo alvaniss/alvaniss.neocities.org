@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>contact</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./stylesheets/contact.css">
+    <meta charset="utf-8"/>
+</head>
+<body>
+    <iframe src="./iframes/navigation-bar.html" class="iframe-navigation-bar"></iframe>
+    <div class="outline-top">
+        <a class="page-heading">contact</a>
+    </div>
+    <div class="outline-all-contact contact-block">
+        <div class="first-contact-block">
+            <div><a id="textElement">Find me on<br>. . . . . .</a></div>
+        </div>
+        <div style="width: 147px;">
+            <div><a id="hoverElement1" href="mailto:alvaniss1g@gmail.com">EMAIL</a></div>
+        </div>
+        <div style="border-style: none none none solid; width: 147px;">
+            <div><a id="hoverElement2" href="https://steamcommunity.com/id/alvaniss/">STEAM</a></div>
+        </div>
+        <div style="border-style: none none none solid; width: 147px;">
+            <div><a id="hoverElement3" href="https://trakt.tv/users/alvaniss">TRAKT</a></div>
+        </div>
+        <div style="border-style: none none none solid; width: 147px;">
+            <div><a id="hoverElement4" href="https://www.backloggd.com/u/Alvaniss">BACKLOGGD</a></div>
+        </div>
+    </div>
+    <div class="outline-bottom-contact contact-block">
+        <div style="width: 147px;">
+            <div><a id="hoverElement5" href="https://t.me/alvaniss">TELEGRAM</a></div>
+        </div>
+        <div style="border-style: none solid none solid; width: 147px; user-select: none; text-decoration: underline;">
+            <div id="copyAlert">Copied!</div>
+            <div id="hoverElement6"><a id="clickSignal" onclick="changeText()">SIGNAL</a></div>
+        </div>
+    </div>
+    <div class="last-div">
+        <iframe src="./iframes/last-div.html"></iframe>
+        <script src="./lights.js" defer></script>
+        <script src="./snow.js" defer></script>
+    </div>
+    <script>
+        const textElement = document.getElementById("textElement");
+        const hoverElements = [
+            { id: "hoverElement1", text: "my Email" },
+            { id: "hoverElement2", text: "Steam" },
+            { id: "hoverElement3", text: "Trakt" },
+            { id: "hoverElement4", text: "Backloggd" },
+            { id: "hoverElement5", text: "Telegram" },
+            { id: "hoverElement6", text: "Signal" },
+        ];
+
+        hoverElements.forEach(element => {
+            const hoverElement = document.getElementById(element.id);
+            hoverElement.addEventListener("mouseenter", () => {
+                textElement.innerHTML = `Find me on<br>${element.text}`;
+            });
+            hoverElement.addEventListener("mouseleave", () => {
+                textElement.innerHTML = "Find me on<br>. . . . . .";
+            });
+        });
+
+        function changeText() {
+            let element = document.getElementById("clickSignal");
+        
+            if (element.innerHTML === "SIGNAL") {
+                element.innerHTML = "@alvaniss.49";
+                copyToClipboard("@alvaniss.49");
+            } else {
+                element.innerHTML = "SIGNAL";
+                copyToClipboard("SIGNAL");
+            }
+        }
+
+        function copyToClipboard(text) {
+            const tempTextArea = document.createElement("textarea");
+            tempTextArea.value = "@alvaniss.49";
+            document.body.appendChild(tempTextArea);
+
+            tempTextArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempTextArea);
+
+            const copyAlert = document.getElementById("copyAlert");
+            copyAlert.style.display = "block";
+
+            setTimeout(() => {
+            copyAlert.style.opacity = 1;
+            }, 10);
+
+            setTimeout(() => {
+            copyAlert.style.opacity = 0;
+
+            setTimeout(() => {
+                copyAlert.style.display = "none";
+            }, 500);
+            }, 1000);
+        }
+    </script>
+</body>
+</html>

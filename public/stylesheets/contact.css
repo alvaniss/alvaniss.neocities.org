@@ -1,0 +1,107 @@
+.list-contact {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list-contact li:nth-child(1n+2) {
+    margin-top: 16px;
+}
+
+.list-contact li a:any-link {
+    font-family: Geist;
+    color: #e9e9e9;
+}
+
+.list-contact li a:any-link:hover {
+    background-color: var(--background);
+}
+
+.list-contact li a {
+    font-weight: bold;
+    font-family: Geist;
+}
+
+.outline-all-contact {
+    background-color: #050505;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 147px;
+    border-style: solid solid solid solid;
+    border-color: var(--border);
+    border-width: 1px;
+    margin: auto;
+    width: 846px;
+}
+
+.outline-bottom-contact {
+    background-color: #050505;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 147px;
+    border-style: none solid solid solid;
+    border-color: var(--border);
+    border-width: 1px;
+    margin: auto;
+    width: 846px;
+}
+
+.first-contact-block {
+    border-style: none solid none none;
+    width: 254px;
+}
+
+.first-contact-block div {
+    width: 171px;
+}
+
+.first-contact-block div a {
+    font-family: Geist;
+    font-size: 26px;
+    font-weight: 620;
+}
+
+.contact-block div {
+    display: flex;
+    align-items: center;
+    border-color: #2e2e2e;
+    border-width: 1px;
+}
+
+.contact-block div div {
+    margin: auto;
+}
+
+.contact-block div div a:any-link {
+    color: #e9e9e9;
+}
+
+.contact-block div div a:any-link:hover {
+    background-color: var(--background);
+}
+
+#clickSignal {
+    cursor: pointer;
+}
+
+#copyAlert {
+    display: none;
+    position: absolute;
+    margin-top: -64px;
+    margin-left: 43px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#clickSignal:hover {
+    background-color: var(--background);
+}

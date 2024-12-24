@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>about me</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./stylesheets/about-me.css">
+    <meta charset="utf-8"/>
+</head>
+<body>
+    <iframe src="./iframes/navigation-bar.html" class="iframe-navigation-bar"></iframe>
+    <div class="outline-top">
+        <a class="page-heading">about me</a>
+    </div>
+    <div class="outline-fade">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="outline">
+        Hi again! For the most part, this is a personal space that I created for myself, but you are welcome here as well :)<br><br>
+        I'm a 19 years old student (he/him, INFJ) from somewhere in Asia who adores rain, winter time with it's fresh air at night, and stargazing.<br><br>
+        <a style="font-weight: bold;">hobbies:</a> web development, design, foreign languages, traveling<br><br>
+        <a style="font-weight: bold;">favorite movies/tv shows:</a> mid90s, Brooklyn, Anatomy of a Fall, The Holdovers, Navalny, No Country for Old Men, Drive, The Sopranos<br><br>
+        <a style="font-weight: bold;">favorite games:</a> Road 96, Until Then, Cyberpunk 2077, Forza Horizon (series), Resident Evil (series), Dishonored (series)
+    </div>
+    <div class="outline-blocks">
+        <div>
+            <img class="wrapped-gift" src="./images/about-me/wrapped-gift.png">
+            <img class="christmas-tree" src="./images/about-me/christmas-tree.png">
+            <a>Until New Year's</a>
+            <p id="counterNewYear">Loading...</p>
+        </div>
+        <div>
+            <img class="palm-tree" src="./images/about-me/palm-tree.png">
+            <img class="pistol" src="./images/about-me/pistol.png">
+            <a>Until GTA 6</a>
+            <p id="counterGTA">Loading...</p>
+        </div>
+        <div>
+            <a class="uptime-dot">•</a><a>&nbsp;&nbsp;My Uptime</a>
+            <p id="uptime-counter">Loading...</p>
+        </div>
+    </div>
+    <div class="last-div">
+        <iframe src="./iframes/last-div.html"></iframe>
+        <script src="./lights.js" defer></script>
+        <script src="./snow.js" defer></script>
+    </div>
+    <script>
+        const counterNewYear = new Date("2025-01-01T00:00:00");
+        const counterGTA = new Date("2025-11-30T00:00:00");
+        const counterUptime = new Date("2005-08-01T00:00:00");
+    
+        function updateCounter() {
+          const now = new Date();
+          const elapsedTime = now - counterUptime;
+          
+          //Counter to date
+          const daysUptime = Math.floor(elapsedTime / (1000 * 60 * 60 * 24));
+          const hoursUptime = Math.floor((elapsedTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+          document.getElementById("uptime-counter").textContent = `~${daysUptime}d ${hoursUptime}h`;
+
+          //Counter from date
+          const distanceNewYear = counterNewYear - now;
+          const distanceGTA = counterGTA - now;
+
+          const daysNewYear = Math.floor((distanceNewYear / (1000 * 60 * 60 * 24)));
+          const hoursNewYear = Math.floor((distanceNewYear % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const daysGTA = Math.floor((distanceGTA / (1000 * 60 * 60 * 24)));
+          const hoursGTA = Math.floor((distanceGTA % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          
+          document.getElementById("counterNewYear").textContent = `${daysNewYear}d ${hoursNewYear}h`;
+          document.getElementById("counterGTA").textContent = `<${daysGTA}d ${hoursGTA}h`;
+        }
+
+        setInterval(updateCounter, 60000);
+        updateCounter();
+      </script>
+</body>
+</html>
