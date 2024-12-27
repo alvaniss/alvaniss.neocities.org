@@ -18,7 +18,7 @@
     </div>
     <div class="container">
         <img class="image_main" src="./img/image_headlines.webp">
-        <div class="headlines"><a class="link" href="../index.html">Dec 24, 2024: Website update.</a></div>
+        <div class="headlines"><a class="link" href="../changelog.html" id="message">Loading...</a><a class="link" href="../changelog.html">: Website update.</a></div>
     </div>
     <div width="600px" align="center">
               <a href="https://web.archive.org/web/19991005003250/http://apple.com/" target="_blank"><img src="./img/banner1.webp" width="198"></a>
@@ -44,5 +44,15 @@
     <div align="center" style="margin-top: 16px;">
       <a style="font-family: 'Times New Roman'; font-size: smaller;">No copyright © 1999 Aalv's Site, Inc. No rights reserved.</a>
     </div>
+    <script>
+      fetch('https://api.github.com/repos/alvaniss/alvaniss.neocities.org/branches/main')
+      .then(res => res.json())
+      .then(res => {
+          const commitDate = new Date(res.commit.commit.author.date);
+          const formattedDate = commitDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+          document.getElementById('message').innerHTML = formattedDate;
+      })
+      .catch(error => console.error('Error fetching commit data:', error));
+  </script>
   </body>
 </html>
