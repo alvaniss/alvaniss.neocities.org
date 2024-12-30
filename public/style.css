@@ -120,7 +120,7 @@ a {
 /** navigation bar **/
 
 .navigation {
-    width: 560px;
+    width: 662px;
 }
 
 .navigation ul {
@@ -164,7 +164,7 @@ a {
 .iframe-navigation-bar {
     height: 38px;
     display: flex;
-    width: 560px;
+    width: 662px;
     border: none;
     margin: auto;
     margin-top: 8px;
