@@ -77,7 +77,9 @@
 
 .grid-text div h2 {
     font-family: Geist;
+    font-size: 28px;
     margin-bottom: 2px;
+    margin-top: 20px;
 }
 
 .grid-text div ul {
@@ -85,7 +87,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
 }
 
 .grid-text div ul li {
