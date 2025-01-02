@@ -50,6 +50,22 @@
     border-width: 1px;
 }
 
+.grid-tiles-left-exception {
+    display: flex;
+    flex-wrap: wrap;
+    width: 454px;
+}
+
+.grid-tiles-left-exception div {
+    height: 93px;
+    width: 93px;
+    margin-top: -1px;
+    margin-left: -1px;
+    border-style: none solid none none;
+    border-color: var(--border);
+    border-width: 1px;
+}
+
 .grid-text {
     width: 567px;
 }
