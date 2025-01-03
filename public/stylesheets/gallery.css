@@ -22,12 +22,14 @@
     display: flex;
     flex-wrap: wrap;
     width: 454px;
+    margin-left: 1px;
 }
 
 .grid-tiles-right {
     display: flex;
     flex-wrap: wrap;
     width: 454px;
+    margin-right: -9px;
 }
 
 .grid-tiles-left div {
@@ -35,9 +37,17 @@
     width: 93px;
     margin-top: -1px;
     margin-left: -1px;
-    border-style: solid solid none none;
     border-color: var(--border);
     border-width: 1px;
+    margin-top: 0px;
+}
+
+.grid-tiles-left div {
+    border-style: none solid none none;
+}
+
+.grid-tiles-left div:nth-child(1n+5) {
+    border-style: solid solid none none;
 }
 
 .grid-tiles-right div {
@@ -45,25 +55,28 @@
     width: 93px;
     margin-top: -1px;
     margin-left: -1px;
+    border-color: var(--border);
+    border-width: 1px;
+    margin-top: 0px;
+}
+
+.grid-tiles-right div {
+    border-style: none none none solid;
+}
+
+.grid-tiles-right div:nth-child(1n+5) {
     border-style: solid none none solid;
-    border-color: var(--border);
-    border-width: 1px;
 }
 
-.grid-tiles-left-exception {
-    display: flex;
-    flex-wrap: wrap;
-    width: 454px;
+.tile-exception div {
+    border-style: solid solid none none;
 }
 
-.grid-tiles-left-exception div {
-    height: 93px;
-    width: 93px;
-    margin-top: -1px;
-    margin-left: -1px;
-    border-style: none solid none none;
+.text-exception div {
+    border-style: solid none none none;
     border-color: var(--border);
     border-width: 1px;
+    margin-left: -5px;
 }
 
 .grid-text {
@@ -77,7 +90,6 @@
 
 .grid-text div h2 {
     font-family: Geist;
-    font-size: 28px;
     margin-bottom: 2px;
     margin-top: 20px;
 }
@@ -109,14 +121,14 @@
 
 .grid-image-left {
     position: absolute;
-    margin-left: -325px;
-    margin-top: 46px;
+    margin-left: -330px;
+    margin-top: 58px;
 }
 
 .grid-image-right {
     position: absolute;
-    margin-left: 52px;
-    margin-top: 46px;
+    margin-left: 48px;
+    margin-top: 55px;
 }
 
 .grid-image-left img {
