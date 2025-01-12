@@ -10,3 +10,4 @@ This section contains screenshots of different versions of my website so it's ea
 |---|---|
 |v1.0|![v1.0](https://raw.githubusercontent.com/Alvaniss/alvaniss.neocities.org/main/v1.0.png)|
 |v2.0|![v2.0](https://raw.githubusercontent.com/alvaniss/alvaniss.neocities.org/main/v2.0.png)|
+|v3.0|![v3.0](https://raw.githubusercontent.com/alvaniss/alvaniss.neocities.org/main/v3.0.png)|
