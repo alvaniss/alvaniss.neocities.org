@@ -1,0 +1,78 @@
+.scene-grid {
+    width: min-content;
+    display: flex;
+    margin: auto;
+    gap: 50px;
+    padding-top: 10px;
+}
+
+.other {
+    margin-top: 24px;
+}
+
+.scene-grid a {
+    text-align: center;
+}
+
+.scene-grid a img {
+    width: 224px;
+    height: 112px;
+}
+
+.scene-grid a img:hover {
+    opacity: 0.8;
+    transition: 0.1s ease;
+}
+
+.scene-grid a:any-link {
+    text-decoration: none;
+    color: #e9e9e9;
+    text-decoration: underline dotted #6c675f 1px;
+    font-family: Geist;
+}
+
+.cross-top-left {
+    position: absolute;
+}
+
+.cross-top-left div:nth-child(1) {
+    border-style: solid none none none;
+    border-color: #989898;
+    border-width: 1px;
+    width: 17px;
+    margin-top: -1px;
+    margin-left: -9px;
+}
+
+.cross-top-left div:nth-child(2) {
+    border-style: solid none none none;
+    border-color: #989898;
+    border-width: 1px;
+    width: 17px;
+    margin-top: -1px;
+    margin-left: -9px;
+    rotate: 90deg;
+}
+
+.cross-bottom-right {
+    position: absolute;
+}
+
+.cross-bottom-right div:nth-child(1) {
+    border-style: solid none none none;
+    border-color: #989898;
+    border-width: 1px;
+    width: 17px;
+    margin-top: -5px;
+    margin-left: 216px;
+}
+
+.cross-bottom-right div:nth-child(2) {
+    border-style: solid none none none;
+    border-color: #989898;
+    border-width: 1px;
+    width: 17px;
+    margin-top: -1px;
+    margin-left: 216px;
+    rotate: 90deg;
+}
