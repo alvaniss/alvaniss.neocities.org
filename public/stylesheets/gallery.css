@@ -68,15 +68,25 @@
     border-style: solid none none solid;
 }
 
-.tile-exception div {
+.tile-exception-left div {
     border-style: solid solid none none;
 }
 
-.text-exception div {
+.tile-exception-right div {
+    border-style: solid none none solid;
+}
+
+.text-exception-left div {
     border-style: solid none none none;
     border-color: var(--border);
     border-width: 1px;
     margin-left: -5px;
+}
+
+.text-exception-right div {
+    border-style: solid none none none;
+    border-color: var(--border);
+    border-width: 1px;
 }
 
 .grid-text {

@@ -5,7 +5,7 @@
     margin: auto;
     width: 846px;
     display: flex;
-    height: 130px;
+    height: 205px;
 }
 
 img {
@@ -52,8 +52,8 @@ img {
 
 .block-1 a {
     position: absolute;
-    margin-left: 167px;
-    margin-top: 69px;
+    margin-left: 123px;
+    margin-top: 91px;
 }
 
 .block-2 {
