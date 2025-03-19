@@ -76,3 +76,41 @@
     margin-left: 216px;
     rotate: 90deg;
 }
+
+.trackers-title {
+    text-align: center;
+}
+
+.trackers-title h2 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.trackers-block {
+    display: flex;
+    gap: 12px;
+}
+
+.trackers-block div {
+    width: 96px;
+    text-align: center;
+    font-family: Geist;
+    font-weight: 550;
+    padding: 10px;
+    border: 1px solid #303030;
+    border-radius: 6px;
+    background-color: #111111;
+}
+
+.trackers-block div a {
+    font-size: 18px;
+}
+
+.trackers-block div a img {
+    width: 32px;
+    padding-top: 12px;
+}
+
+.trackers-block div a:nth-of-type(3) img {
+    padding-left: 8px;
+}
