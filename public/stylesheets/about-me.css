@@ -83,3 +83,19 @@
     margin-top: 37px;
     margin-left: 134px;
 }
+
+.card3d {
+    transform: scale(1);
+    perspective: 600px;
+  }
+  
+  .card3d:hover {
+    z-index: 10;
+    transform: scale(1.1);
+  }
+  
+  .card3d,
+  .card3d img {
+    transition: all 200ms ease-out;
+    border-radius: 4px;
+  }
