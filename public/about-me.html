@@ -37,8 +37,11 @@
         I'm a 19 years old student from somewhere in Asia who adores rain, winter time with it's fresh air at night, and stargazing. My favorite hobbies are web development, design, foreign languages and traveling.
     </div>
     <div class="outline-blocks">
-        <div style="z-index: -1;">
-            <img style="display: block; position: absolute; margin-left: -1px; margin-top: -34px; image-rendering: pixelated;" src="./images/about-me/space.svg">
+        <div>
+            <img class="wrapped-gift" src="./images/about-me/wrapped-gift.png">
+            <img class="christmas-tree" src="./images/about-me/christmas-tree.png">
+            <a>Until New Year's</a>
+            <p id="counterNewYear">Loading...</p>
         </div>
         <div>
             <img class="palm-tree" src="./images/about-me/palm-tree.png">
@@ -112,6 +115,7 @@
         <iframe src="./iframes/last-div.html"></iframe>
     </div>
     <script>
+        const counterNewYear = new Date("2026-01-01T00:00:00");
         const counterGTA = new Date("2025-11-30T00:00:00");
         const counterUptime = new Date("2005-08-01T00:00:00");
     
@@ -126,11 +130,15 @@
           document.getElementById("uptime-counter").textContent = `~${daysUptime}d ${hoursUptime}h`;
 
           // counter from date
+          const distanceNewYear = counterNewYear - now;
           const distanceGTA = counterGTA - now;
 
+          const daysNewYear = Math.floor((distanceNewYear / (1000 * 60 * 60 * 24)));
+          const hoursNewYear = Math.floor((distanceNewYear % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
           const daysGTA = Math.floor((distanceGTA / (1000 * 60 * 60 * 24)));
           const hoursGTA = Math.floor((distanceGTA % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
           
+          document.getElementById("counterNewYear").textContent = `${daysNewYear}d ${hoursNewYear}h`;
           document.getElementById("counterGTA").textContent = `<${daysGTA}d ${hoursGTA}h`;
         }
 
