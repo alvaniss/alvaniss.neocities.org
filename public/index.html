@@ -24,17 +24,18 @@
     </div>
     <div class="outline-bottom blocks">
         <div style="border-style: none solid none none; border-color: #2e2e2e; border-width: 1px; padding-right: 12px;">
-            <div><a style="font-size: 24px; font-weight: 500;">Changelog</a></div>
-            <div style="height: 52px;"><a>Check out the new site updates.</a></div>
-            <div><a class="no-link-decoration" href="https://alvaniss.neocities.org/changelog" style="background-color: #397545; color: white;">GO →</a></div>
-        </div>
-        <div style="padding-left: 12px; padding-right: 12px;">
             <div><a style="font-size: 24px; font-weight: 500;">Neocities</a></div>
             <div style="height: 52px;"><a>Direct link to my profile. You can follow me!</a></div>
             <div><a class="no-link-decoration" href="https://neocities.org/site/alvaniss" style="background-color: #f5e8c8; color: black;">GO →</a></div>
+
+        </div>
+        <div style="padding-left: 12px; padding-right: 12px; text-align: center;">
+            <a><img id="randomImage" style="margin-top: 48px;"></a>
         </div>
         <div style="border-style: none none none solid; border-color: #2e2e2e; border-width: 1px; padding-left: 12px;">
-            <div><a style="font-size: 24px; font-weight: 500;">Web-rating</a></div>
+            <div><a style="font-size: 24px; font-weight: 500;">Changelog</a></div>
+            <div style="height: 52px;"><a>Check out new updates! Last commit: <a id="message">Loading...</a></a></div>
+            <div><a class="no-link-decoration" href="https://alvaniss.neocities.org/changelog" style="background-color: #397545; color: white;">GO →</a></div>
         </div>
     </div>
     <div class="outline-bottom webring-block">
@@ -47,7 +48,28 @@
     <div class="last-div">
         <iframe src="./iframes/last-div.html"></iframe>
         <a style="position: fixed; margin-top: 4px; margin-left: -708px; font-size: 12px; font-weight: 550;">Fa Teen: this site contains slightly offensive material.</a>
-        <a style="position: fixed; margin-left: -822px;"><img style="height: 74px;" src="./images/homepage/censor_14b.gif"></a>
+        <a style="display: block; position: fixed; margin-top: -28px;" href="https://www.mabsland.com/Adoption.html"><img style="height: 74px;" src="./images/homepage/censor_14b.gif"></a>
     </div>
+    <script>
+        // commit
+        fetch('https://api.github.com/repos/alvaniss/alvaniss.neocities.org/branches/main')
+        .then(res => res.json())
+        .then(res => {
+            const commitDate = new Date(res.commit.commit.author.date);
+            const formattedDate = commitDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+            document.getElementById('message').innerHTML = formattedDate;
+        })
+        .catch(error => console.error('Error fetching commit data:', error));
+
+        // random image                
+        const images = [
+            "./images/homepage/bert.gif",
+            "./images/homepage/catpls.gif",
+            "./images/homepage/loading.gif"
+        ];
+
+        const randomIndex = Math.floor(Math.random() * images.length);
+        document.getElementById("randomImage").src = images[randomIndex];
+    </script>
 </body>
 </html>
